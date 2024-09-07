@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password-generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Find yourself a random <br />
+        <span content="p">p</span>
+        <span content="a">a</span>
+        <span content="s">s</span>
+        <span content="s">s</span>
+        <span content="w">w</span>
+        <span content="o">o</span>
+        <span content="r">r</span>
+        <span content="d">d</span>
+        on a single click
+      </h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password" />
+        <img src="images/copyicon.png" onclick="copypassword()" />
+      </div>
+      <button onclick="createpassword()">
+        <img src="images/password.png" alt="" />Generate Password
+        <!-- <img src="images/security-lock.png" alt="" /> -->
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
